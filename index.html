@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Camila Oliveira</title>
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<!-- Canonical -->
+	<link rel=”canonical” href=https://www.ifab.es/>
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPW8LQQ81T"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'G-LPW8LQQ81T');
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="icons"> <a style="text-decoration:none; color: inherit;" href="https://www.github.com/camilahorita"><label class="icon-github-circled"></label></a></div>
+			<a style="text-decoration:none; color: inherit; margin:5px;" href="https://www.linkedin.com/in/camila-horita"><label class="icon-linkedin"></label></a>
+		</nav>
+	</header>
+	<div class="newheader">
+		<ul>
+			<li class="iten0">CO</li>
+			<li class="iten1" id="iten1"> <a style="text-decoration:none; color: inherit;" href="https://drive.google.com/file/d/14cAiqtu-3D7GQ68Fwzekfyj4T-LgDzAa/view?usp=sharing">CV <label class="icon-download" ></label></a></li>
+			<li class="iten2" id ="bcontacto">CONTACTO</li>
+		</ul>
+	</div>
+	<main>
+		<article>
+			<h1>PORTFOLIO CAMILA OLIVEIRA</h1>
+			<section class="contacto" id= "contacto">
+			<label class="icon-cancel-circle" id ="cancel"></label>
+			<div class="contactotexto"><h2> Contacto</h2> <br>
+				<p>	Email: camilayhorita@gmail.com <br><br>
+					Teléfono: 623009236 <br><br>
+					Dirección: Camino de Vera, s/n, Valencia <br><br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12318.228579431521!2d-0.3449005134386585!3d39.47933232175979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60488259073375%3A0xfb410ba707ca33c9!2sUPV%20-%20Facultat%20de%20Belles%20Arts!5e0!3m2!1spt-BR!2ses!4v1638188530269!5m2!1spt-BR!2ses" width="85%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+			</div>
+			</section>
+			<section class="abme">
+				<button class="aboutme" id="aboutme">Sobre mí</button>
+				<div class="text" id="text">
+					<h3></h3>
+					<p>Soy una ingeniera apasionada por las nuevas tecnologías. Con 2 años y 6 meses de experiencia en el sector industrial, he trabajado en áreas de procesos y proyectos con enfoque en la gestión de proyectos. Me encanta estudiar y desarrollar nuevas soluciones.
+					<br><br></p>
+				</div>
+			</section>
+			<section class="boxes">
+				<div class="box">
+					<div class="news imgOne">
+						<label class="icon-left-open img" id ="left"></label>
+						<img  class ="img" src="images/Camilahorita.png" id="image01">
+						<label class="icon-right-open img" id="right"></label>
+					</div>
+					<a id="anchor" href="https://camilahorita.github.io/site/"><div class="buttons">
+						<button>Ver</button>
+					</div></a>
+					<div class="description">
+						<h2 class= "title" id ="titleprincipal">Sitio web personal</h2>
+						<p id ="textdescription"> Sitio web personal realizado en CSS y HTML. </p>
+					</div>
+				</div>
+				<div class="boxdos">
+					<div class="imgdos"></div>
+					<a id="anchor" href="https://www.youtube.com/watch?v=qi55EBSELKU">
+					<div class="buttons">
+						<button>Ver</button>
+					</div></a>
+					<div class="description">
+						<h2 class= "title" >Proyecto ajedrez en Maya 3D</h2>
+						<p > Diseño de un tablero de ajedrez y sus fichas hubicados en una casa con animación de una pequeña partida de ajedrez.</p>
+					</div>
+				</div>
+				<div class="boxtres">
+					<div class="imgtres"></div>
+					<a id="anchor" href="https://expo.dev/@camilahorita/organicospro">
+					<div class="buttons">
+						<button>Ver</button>
+					</div></a>
+					<div class="description">
+						<h2 class= "title" >Aplicación híbrida en React Native</h2>
+						<p > Aplicación de busca de insumos orgánicos desarollada en React Native y JavaScript.</p>
+					</div>
+				</div>
+			</section>	
+		</article>
+	</main>
+	<div class="pie">
+		<div class="information">
+			<p>
+				Email: camilayhorita@gmail.com<br>
+				Teléfono: 623009236
+			</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript">
+
+		let bcontacto = document.getElementById("bcontacto");
+
+		bcontacto.addEventListener("mouseover", email)
+		let contactemail = "camilayhorita@gmail.com"
+		function email (e) {
+			bcontacto.innerHTML = contactemail;
+		}
+
+		bcontacto.addEventListener("mouseout", returnContact)
+		let textcontact = "CONTACTO";
+		function returnContact (e) {
+			bcontacto.innerHTML = textcontact;
+		}
+
+		
+		let aboutmebutton = document.getElementById("aboutme");
+		let text = document.getElementById("text");
+
+
+		aboutmebutton.addEventListener("click", destachable)
+
+		function destachable () {
+			if (text.style.maxHeight) {
+					text.style.maxHeight = null
+				}else {
+					text.style.maxHeight = text.scrollHeight + "px" 
+				}
+			
+		}
+		let image1 = document.getElementById("image01");
+		let leftIcon = document.getElementById("left");
+		let rightIcon =document.getElementById("right");
+		let anchor = document.getElementById("anchor");
+		let titleprincipal = document.getElementById("titleprincipal");
+		let textdescription = document.getElementById("textdescription");
+		let titles = ["Sitio web personal", "Proyecto de ajedrez en Maya 3D", "Aplicación híbrida en React Native"];
+		let descriptions = ["Sitio web personal realizado en CSS y HTML", "Diseño de un tablero de ajedrez y sus fichas hubicados en una casa con animación de una pequeña partida de ajedrez.", "Aplicación de busca de insumos orgánicos desarollada en React Native y JavaScript."];
+		let totalImages = ["images/Camilahorita.png","images/image4.jpeg", "images/image5.png"];
+		let sites = ["https://camilahorita.github.io/site/", "https://www.youtube.com/watch?v=qi55EBSELKU", "https://expo.dev/@camilahorita/organicospro"];
+
+
+		let projectInit = 0;
+		rightIcon.addEventListener("click",nextProject)
+	
+		function nextProject () {
+				projectInit +=1;
+				if (projectInit > titles.length -1){
+						projectInit=0;
+					}
+				let newTitle = titles[projectInit];
+				let newText = descriptions[projectInit];
+				let newImage = totalImages[projectInit];
+				let newAnchor = sites[projectInit];
+				titleprincipal.innerHTML =  newTitle;
+				textdescription.innerHTML = newText;
+				image01.src = newImage;
+				anchor.href = newAnchor;
+			}
+
+		leftIcon.addEventListener("click", returnProject)
+
+		function returnProject () {
+			projectInit -=1;
+			if (projectInit<0 ){
+				projectInit = 2;
+			}
+				let newTitle = titles[projectInit];
+				let newText = descriptions[projectInit];
+				let newImage = totalImages[projectInit];
+				let newAnchor = sites[projectInit];
+				titleprincipal.innerHTML =  newTitle;
+				textdescription.innerHTML = newText;
+				image01.src = newImage;
+				anchor.href = newAnchor;
+		}
+
+		image1.addEventListener("mouseover", changeImage);
+		image1.addEventListener("mouseout", returnImage);
+
+		function changeImage () {
+			if (image01.getAttribute("src") == "images/Camilahorita.png") {
+				image01.src = "images/Camilahorita2.png"
+			} if (image01.getAttribute("src") == "images/image4.jpeg") {
+				image01.src = "images/image3.jpeg"
+			} if (image01.getAttribute("src") == "images/image5.png"){
+				image01.src= "images/image6.png"
+			} return image01.getAttribute("src")
+		}
+		function returnImage () {
+			if(image01.getAttribute("src") == "images/Camilahorita2.png") {
+				image01.src = "images/Camilahorita.png"
+			}if (image01.getAttribute("src") == "images/image3.jpeg") {
+				image01.src = "images/image4.jpeg"
+			} if (image01.getAttribute("src") == "images/image6.png") {
+				image01.src= "images/image5.png"
+			}
+		}
+		let contacto = document.getElementById("contacto");
+		$(window).resize(function() {
+    	var width = $(document).width();
+    	if (width < 900) {
+    			let newTitle = titles[0];
+				let newText = descriptions[0];
+				let newImage = totalImages[0];
+				let newAnchor = sites[0];
+				titleprincipal.innerHTML =  newTitle;
+				textdescription.innerHTML = newText;
+				image01.src = newImage;
+				anchor.href = newAnchor;
+				contacto.style.display = "none";
+    	}
+		});
+
+
+		bcontacto.addEventListener("click", function open() {
+			contacto.style.display = "block";})
+
+		let cancel = document.getElementById("cancel");
+
+		cancel.addEventListener("click", function closecontact () {
+			contacto.style.display = "none";
+		});
+
+
+	</script>
+</body>
+</html>

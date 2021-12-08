@@ -1,0 +1,390 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 64px;
+	font-size: 36px;
+	color: #FFF;
+	background-color: #01070D;
+	position: sticky;
+	top: 0;
+	z-index: 900;
+	box-shadow: 0 0 2rem black;
+}
+.newheader {
+	display: none;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav label {
+	cursor: pointer;
+	margin-top: 6px;
+}
+.icon-github-circled {
+	border-right: 1px solid #87878C
+}
+.sidebar {
+	display: none;
+}
+body {
+	background-color: #262626;
+}
+main {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 710px;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h1 {
+	display: block;
+	padding-top: 20px;
+}
+
+.aboutme {
+	text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 120px;
+    border: 2px solid #fff;
+    background-color: #262626;
+    padding: 5px 10px;
+    color: #FFF;
+    margin-top: 15px;
+}
+.aboutme:hover {
+	background-color: #01070D;
+	transition: all 0.8s;
+}
+.text {
+	margin: 10px;
+	transition: all 0.8s;
+	max-height: 0px;
+	overflow: hidden;
+}
+.news {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.news img {
+	width: 80%;
+	border: 2px solid #fff;
+	transition: all 0.8s;
+}
+.icon-left-open{
+	cursor: pointer;
+	font-size: 26px;
+}
+.icon-right-open {
+	cursor: pointer;
+	font-size: 26px;
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buttons button {
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 80%;
+    border: 2px solid #fff;
+    border-top: none;
+    background-color: #262626;
+    padding: 5px 10px;
+    color: #FFF;
+}
+.buttons button:hover {
+	background-color: #01070D;
+	transition: all 0.8s;
+}
+.description {
+	display:block;
+	width: 80%;
+	margin:0 auto;
+	border: 2px solid #fff;
+    border-top: none;
+    padding: 10px;
+}
+.boxdos{
+	display: none;
+}
+.boxtres{
+	display: none;
+}
+#iten1 {
+	text-decoration: none;
+}
+.contacto {
+	position: absolute;
+	z-index: 3000;
+	opacity: 0,90;
+	width: 60%;
+	height: 700px;
+	display: none;
+	background-color: #01070D;
+	margin-top: -20px;
+	margin-left: 15%;
+	padding-top: 10px;
+	padding-left: 10px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+
+}
+.contactotexto {
+	align-content: center;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.icon-cancel-circle {
+	cursor: pointer;
+	font-size: 24px;
+}
+.icon-cancel-circle:hover {
+	color: #A30212;
+	transition: all 0.3s;
+}
+.information {
+	color: #FFF;
+}
+.pie {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #01070D;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+
+}
+
+@media (min-width:900px) {
+	header {
+		height: 100%;
+		width: 64px;
+		left: 0;
+		font-size: 30px;
+		position: fixed;
+		box-shadow: none;
+		display: flex;
+		border: 1px solid #87878C;
+	}
+	nav {
+		width: 100%;
+		flex-direction: column;
+		justify-content: flex-end
+	}
+	.icon-github-circled {
+		border-right: none;
+	}
+	.icon-linkedin {
+		padding-bottom: 10px;
+	}
+	.icons {
+		width: 100%;
+		text-align: center;
+		border-top: 1px solid #87878C;
+		border-bottom: 1px solid #87878C;
+		padding:5px;
+		margin-bottom: 5px;
+	}
+	main {
+		padding-left: 74px;
+	}
+	h1 {
+		padding-top: 90px;
+	}
+	.newheader {
+		display: flex;
+		width: 100%;
+		height: 64px;
+		font-size: 18px;
+		color: #FFF;
+		background-color: #01070D;
+		position: fixed;
+		z-index: 1000;
+		border: 1px solid #87878C
+	}
+
+	.newheader ul {
+		display: flex;
+		align-items: center;
+		list-style: none;
+
+		}
+	.newheader li {
+		height: 100%;
+	}
+	.iten1{
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	.icon-download {
+		cursor: pointer;
+	}
+	.iten1:hover, .iten2:hover, .icon-github-circled:hover, .icon-linkedin:hover {
+		color:  #A30212;
+		transition: all 0.5s;
+
+	}
+	.iten2{
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-right: 20px;
+		cursor: pointer;
+		border-right: 1px solid #87878C
+	}
+	.favico {
+		width: 36px;
+		margin-left: 6px;
+	}
+	.iten0{
+		width: 62px;
+		padding-top: 0;
+		padding-left: 10px;
+		padding-top: 10px;
+		font-size: 30px;
+		color: #A30212;
+		cursor: default;
+		font-family: 'IM Fell English SC', serif;
+	}
+	.iten1{
+		border-right: 1px solid #87878C;
+		border-left: 1px solid #87878C;
+		padding-right: 10px;
+		cursor: pointer;
+	}
+	.icon-left-open {
+		display: none;
+	}
+	.icon-right-open {
+		display: none;
+	}
+	.boxes{
+		position: absolute;
+		display: grid;
+		grid-template-areas: 
+		"title title"
+		"aboutme aboutme"
+		"box1 box2"
+		"box3 box4" 
+		"footer footer";
+		grid-template-columns: 50%;
+	}
+	h1 {
+		position: static;
+		grid-area: title;
+		margin: auto;
+	}
+	.abme{
+		grid-area: aboutme;
+	}
+	.aboutme {
+		width: 180px;
+		margin-left: 10px;
+	}
+	.aboutme:hover {
+		width: 190px;
+		font-size: 18px;
+	}
+	.text {
+		grid-area: texto;
+	}
+	.description {
+		display: block;
+		margin: auto;
+	}
+	.box{
+		grid-area: box1;
+		height: 480px;
+		display: block;
+	}
+	.boxdos{
+		height: 480px;
+		display: block;
+		margin: auto;
+		grid-area: box2;
+	}
+	.boxtres{
+		height: 500px;
+		display: block;
+		margin-top: 0px;
+		grid-area: box3;
+	}
+	.imgdos {
+		display: block;
+		width: 80%;
+		height: 55%;
+		border: 2px solid #fff;
+		transition: all 0.1s;
+		margin: auto;
+		background: url("../images/image4.jpeg") ;
+		background-size: 100%;
+		background-position: center;
+	}
+	.imgtres {
+		display: block;
+		width: 80%;
+		height: 55%;
+		border: 2px solid #fff;
+		transition: all 0.1s;
+		margin: auto;
+		background: url("../images/image5.png") ;
+		background-size: 100%;
+		background-position: center;
+	}
+	.img {
+		display: none;
+	}
+	.imgOne {
+		display: block;
+		width: 80%;
+		height: 55%;
+		border: 2px solid #fff;
+		transition: all 0.1s;
+		margin: auto;
+		background: url("../images/Camilahorita.png") ;
+		background-size: 100%;
+		background-position: center;
+	}
+	.imgdos:hover {
+		transition-duration: 0.3s;
+		background-repeat: no-repeat;
+		background-image: url("../images/image3.jpeg") ;
+		
+	}
+	.imgtres:hover {
+		transition-duration: 0.3s;
+		background-repeat: no-repeat;
+		background-image: url("../images/image6.png") ;
+		
+	}
+	.imgOne:hover {
+		transition-duration: 0.5s;
+		background-repeat: no-repeat;
+		background-image: url("../images/Camilahorita2.png") ;
+	}
+	.pie {
+		display: none;
+	}
+
+
+}
